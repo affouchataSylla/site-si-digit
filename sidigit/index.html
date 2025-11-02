@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiDigit - Votre Agence Digitale au Maroc | Création de Sites Web & Marketing Digital</title>
+    <meta name="description" content="SiDigit - Agence digitale marocaine spécialisée dans la création de sites web, SEO, marketing digital et identité visuelle. Devis gratuit et accompagnement personnalisé au Maroc.">
+    <meta name="keywords" content="création site web Maroc, marketing digital Maroc, SEO Maroc, agence digitale Casablanca, identité visuelle Maroc, développement web Maroc">
+    <link rel="shortcut icon" type="LOGO/jpeg" href="Capture.png"/>
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sidigit.ma/">
+    <meta property="og:title" content="SiDigit - Votre Agence Digitale au Maroc">
+    <meta property="og:description" content="Création de sites web, marketing digital et identité visuelle au Maroc. Devis gratuit.">
+    <meta property="og:image" content="https://sidigit.ma/assets/og-image.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://sidigit.ma/">
+    <meta property="twitter:title" content="SiDigit - Votre Agence Digitale au Maroc">
+    <meta property="twitter:description" content="Création de sites web, marketing digital et identité visuelle au Maroc. Devis gratuit.">
+    <meta property="twitter:image" content="https://sidigit.ma/assets/og-image.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+   
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Tailwind (Play CDN) - preflight disabled to avoid reset conflicts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            corePlugins: { preflight: false },
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fefbf0',
+                            100: '#fdf6e1',
+                            200: '#fbecc3',
+                            300: '#f8e2a5',
+                            400: '#f5d887',
+                            500: '#F6CF28',
+                            600: '#d4b023',
+                            700: '#b2911e',
+                            800: '#907219',
+                            900: '#6e5314',
+                        },
+                        navy: {
+                            50: '#e6f0ff',
+                            100: '#ccdfff',
+                            200: '#99bfff',
+                            300: '#669fff',
+                            400: '#337fff',
+                            500: '#004AAD',
+                            600: '#003d8a',
+                            700: '#003067',
+                            800: '#002344',
+                            900: '#001621',
+                        }
+                    },
+                    boxShadow: {
+                        neon: '0 10px 30px rgba(246,207,40,0.35)',
+                        navy: '0 10px 30px rgba(0,74,173,0.35)',
+                    },
+                    backdropBlur: {
+                        xs: '2px'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <!-- Curseur personnalisé -->
+<div class="cursor-outer"></div>
+<div class="cursor-inner"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+  <div class="nav-container">
+    <div class="logo-container">
+      <a href="#home" class="logo">
+        <img src="Capture.png" alt="SI DIGIT Logo">
+      </a>
+    </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Accueil</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#portfolio" class="nav-link">Portfolio</a>
+                <a href="#about" class="nav-link">À propos</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="theme-toggle" title="Basculer le thème">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <a href="#contact" class="nav-link cta-button">Devis Gratuit</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-media">
+            <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1600&auto=format&fit=crop">
+                <source src="https://cdn.coverr.co/videos/coverr-programming-code-typing-9716/1080p.mp4" type="video/mp4">
+                <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+                <p>Votre navigateur ne supporte pas la lecture vidéo.</p>
+            </video>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Votre présence digitale, 
+                    <span class="gradient-text">notre mission</span>
+                </h1>
+                <p class="hero-description">
+                    Transformez votre vision en réalité digitale avec SiDigit. 
+                    Création de sites web, marketing digital et identité visuelle 
+                    pour propulser votre entreprise vers le succès.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Démarrer mon projet
+                    </a>
+                    <a href="#portfolio" class="btn btn-secondary">
+                        <i class="fas fa-eye"></i>
+                        Voir nos réalisations
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Projets réalisés</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Clients satisfaits</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24h</span>
+                        <span class="stat-label">Support réactif</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-graphic">
+                    <div class="floating-card card-1">
+                        <i class="fas fa-laptop-code"></i>
+                        <span>Développement Web</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Marketing Digital</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fas fa-palette"></i>
+                        <span>Design Créatif</span>
+                    </div>
+                    <div class="floating-card card-4">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>Mobile First</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tailwind Showcase (Modern 2035 UI) -->
+    <section class="relative py-24 bg-gradient-to-br from-slate-50 to-slate-100 overflow-hidden">
+        <div class="absolute inset-0 -z-10">
+            <div class="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-brand-200 blur-3xl opacity-60"></div>
+            <div class="absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-navy-200 blur-3xl opacity-60"></div>
+       
+            
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services bg-gradient-to-br from-slate-50 to-slate-100 py-24">
+        <div class="container mx-auto px-5">
+            <div class="section-header text-center max-w-3xl mx-auto">
+                <h2 class="section-title text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-brand-500 via-navy-500 to-brand-600 bg-clip-text text-transparent">Nos Services</h2>
+                <p class="section-description text-slate-600 text-lg">
+                    Des solutions complètes pour votre transformation digitale
+                </p>
+            </div>
+            <div class="services-grid grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="service-card animate-on-scroll rounded-2xl border border-white/60 bg-white/70 backdrop-blur-md p-6 shadow-neon hover:shadow-xl transition-all">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="service-title text-xl font-semibold text-slate-800">Création de Sites Web</h3>
+                    <p class="service-description text-slate-600">
+                        Sites vitrine, e-commerce, blogs et portfolios sur mesure. 
+                        Design moderne, responsive et optimisé pour tous les appareils.
+                    </p>
+                    <ul class="service-features mt-4 space-y-2">
+                        <li><i class="fas fa-check"></i> Design responsive</li>
+                        <li><i class="fas fa-check"></i> SEO optimisé</li>
+                        <li><i class="fas fa-check"></i> Vitesse optimale</li>
+                        <li><i class="fas fa-check"></i> Maintenance incluse</li>
+                    </ul>
+                    <div class="service-price mt-4 text-brand-600 font-bold"></div>
+                </div>
+
+                <div class="service-card featured animate-on-scroll rounded-2xl border border-brand-300 bg-white/80 backdrop-blur-md p-6 shadow-neon hover:shadow-xl transition-all scale-105">
+                    <div class="service-badge">Populaire</div>
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="service-title text-xl font-semibold text-slate-800">Marketing Digital</h3>
+                    <p class="service-description text-slate-600">
+                        SEO, réseaux sociaux, publicité Google/Facebook et email marketing. 
+                        Augmentez votre visibilité et générez plus de leads.
+                    </p>
+                    <ul class="service-features mt-4 space-y-2">
+                        <li><i class="fas fa-check"></i> SEO & référencement</li>
+                        <li><i class="fas fa-check"></i> Gestion réseaux sociaux</li>
+                        <li><i class="fas fa-check"></i> Publicité ciblée</li>
+                        <li><i class="fas fa-check"></i> Email marketing</li>
+                    </ul>
+                    <div class="service-price mt-4 text-brand-600 font-bold"></div>
+                </div>
+
+                <div class="service-card animate-on-scroll rounded-2xl border border-white/60 bg-white/70 backdrop-blur-md p-6 shadow-neon hover:shadow-xl transition-all">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3 class="service-title text-xl font-semibold text-slate-800">Identité Visuelle (Branding)</h3>
+                    <p class="service-description text-slate-600">
+                        Logos, chartes graphiques, flyers et supports de communication. 
+                        Une identité forte pour vous démarquer de la concurrence.
+                    </p>
+                    <ul class="service-features mt-4 space-y-2">
+                        <li><i class="fas fa-check"></i> Logo & charte graphique</li>
+                        <li><i class="fas fa-check"></i> Supports print</li>
+                        <li><i class="fas fa-check"></i> Templates personnalisés</li>
+                        <li><i class="fas fa-check"></i> Guidelines complètes</li>
+                    </ul>
+                    <div class="service-price mt-4 text-brand-600 font-bold"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="packs-section bg-white py-24">
+        <div class="container mx-auto px-5">
+            <div class="section-header text-center max-w-3xl mx-auto">
+                <h2 class="section-title text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-brand-500 via-navy-500 to-brand-600 bg-clip-text text-transparent">Nos Packs & Offres</h2>
+                <p class="section-description text-slate-600">
+                    Des solutions clés en main pour tous vos besoins digitaux
+                </p>
+            </div>
+            <div class="packs-grid grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="pack-card rounded-2xl border border-slate-200/80 bg-white/90 backdrop-blur p-8 shadow-neon hover:shadow-xl transition-all">
+                    <div class="pack-badge">Populaire</div>
+                    <div class="pack-header">
+                        <h3 class="pack-name">Pack Start</h3>
+                        <div class="pack-price">
+                            <span class="price-amount">3 290 MAD</span>
+                            <span class="price-period">une fois</span>
+                        </div>
+                    </div>
+                    <div class="pack-description">
+                        Parfait pour débuter votre présence en ligne
+                    </div>
+                    <ul class="pack-features mt-4 space-y-2">
+                        <li><i class="fas fa-check"></i> Site vitrine 5 pages</li>
+                        <li><i class="fas fa-check"></i> Design responsive</li>
+                        <li><i class="fas fa-check"></i> Formulaire de contact</li>
+                        <li><i class="fas fa-check"></i> Optimisation SEO de base</li>
+                        <li><i class="fas fa-check"></i> Livraison 2 semaines</li>
+                        <li><i class="fas fa-check"></i> Support 1 mois</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-full mt-4">Choisir ce pack</a>
+                </div>
+
+                <div class="pack-card featured rounded-2xl border border-brand-300 bg-white/90 backdrop-blur p-8 shadow-neon hover:shadow-xl transition-all scale-105">
+                    <div class="pack-badge">Recommandé</div>
+                    <div class="pack-header">
+                        <h3 class="pack-name">Pack Business</h3>
+                        <div class="pack-price">
+                            <span class="price-amount">9 890 MAD</span>
+                            <span class="price-period">une fois</span>
+                        </div>
+                    </div>
+                    <div class="pack-description">
+                        Solution complète pour développer votre business
+                    </div>
+                    <ul class="pack-features mt-4 space-y-2">
+                        <li><i class="fas fa-check"></i> Site e-commerce complet</li>
+                        <li><i class="fas fa-check"></i> Design sur mesure</li>
+                        <li><i class="fas fa-check"></i> Paiement en ligne</li>
+                        <li><i class="fas fa-check"></i> Gestion des stocks</li>
+                        <li><i class="fas fa-check"></i> SEO avancé</li>
+                        <li><i class="fas fa-check"></i> Analytics intégrés</li>
+                        <li><i class="fas fa-check"></i> Formation incluse</li>
+                        <li><i class="fas fa-check"></i> Support 3 mois</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-full mt-4">Choisir ce pack</a>
+                </div>
+
+                <div class="pack-card rounded-2xl border border-slate-200/80 bg-white/90 backdrop-blur p-8 shadow-neon hover:shadow-xl transition-all">
+                    <div class="pack-badge">Premium</div>
+                    <div class="pack-header">
+                        <h3 class="pack-name">Pack Premium</h3>
+                        <div class="pack-price">
+                            <span class="price-amount">2 190 MAD</span>
+                            <span class="price-period">/mois</span>
+                        </div>
+                    </div>
+                    <div class="pack-description">
+                        Accompagnement digital complet et personnalisé
+                    </div>
+                    <ul class="pack-features mt-4 space-y-2">
+                        <li><i class="fas fa-check"></i> Site web sur mesure</li>
+                        <li><i class="fas fa-check"></i> Marketing digital</li>
+                        <li><i class="fas fa-check"></i> Gestion réseaux sociaux</li>
+                        <li><i class="fas fa-check"></i> Publicité Google/Facebook</li>
+                        <li><i class="fas fa-check"></i> Email marketing</li>
+                        <li><i class="fas fa-check"></i> Reporting mensuel</li>
+                        <li><i class="fas fa-check"></i> Support prioritaire</li>
+                        <li><i class="fas fa-check"></i> Évolutions illimitées</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-full mt-4">Choisir ce pack</a>
+                </div>
+            </div>
+            <div class="packs-note">
+                <p><i class="fas fa-info-circle"></i> Tous nos packs incluent l'hébergement, la maintenance et le support. Paiement en plusieurs fois possible.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Calculator -->
+
+    <section class="quote-calculator">
+        <div class="container">
+            <div class="calculator-container">
+                <h2 class="calculator-title">Estimez le coût de votre projet</h2>
+                <p class="calculator-subtitle">Obtenez une estimation instantanée et transparente</p>
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label for="project-type">Type de projet</label>
+                        <select id="project-type" class="form-select">
+                            <option value="">Sélectionnez un type</option>
+                            <option value="vitrine">Site vitrine</option>
+                            <option value="ecommerce">E-commerce</option>
+                            <option value="blog">Blog/Portfolio</option>
+                            <option value="corporate">Site corporate</option>
+                            <option value="landing">Landing page</option>
+                            <option value="app">Application web</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="pages">Nombre de pages</label>
+                        <select id="pages" class="form-select">
+                            <option value="">Sélectionnez</option>
+                            <option value="1-3">1-3 pages</option>
+                            <option value="4-7">4-7 pages</option>
+                            <option value="8-15">8-15 pages</option>
+                            <option value="16-30">16-30 pages</option>
+                            <option value="30+">30+ pages</option>
+                        </select>
+                        
+                    </div>
+                    <div class="form-group">
+                        <label for="design">Type de design</label>
+                        <select id="design" class="form-select">
+                            <option value="">Sélectionnez</option>
+                            <option value="template">Template personnalisé</option>
+                            <option value="custom">Design sur mesure</option>
+                            <option value="premium">Design premium</option>
+                        </select>
+                    <div class="text-fond-si-digit">
+  <div class="ligne haut">
+    <span>Marketing Digital • Branding • création de site • </span>
+  </div>
+  <div class="ligne milieu">
+    <span>Design Graphic • Stratégie • Developpement • </span>
+  </div>
+  <div class="ligne bas">
+    <span> Marketing Digital • Branding • Design Graphic • </span>
+  </div>
+</div>
+
+
+                    </div>
+                    <div class="form-group">
+                        <label for="features">Fonctionnalités</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="seo" class="feature-checkbox">
+                                <span class="checkmark"></span>
+                                SEO optimisé (+1 100 MAD)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="cms" class="feature-checkbox">
+                                <span class="checkmark"></span>
+                                CMS personnalisé (+2 200 MAD)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="multilangue" class="feature-checkbox">
+                                <span class="checkmark"></span>
+                                Multilingue (+1 650 MAD)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="analytics" class="feature-checkbox">
+                                <span class="checkmark"></span>
+                                Analytics avancés (+550 MAD)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="maintenance" class="feature-checkbox">
+                                <span class="checkmark"></span>
+                                Maintenance 1 an (+3 300 MAD)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" value="hosting" class="feature-checkbox">
+                                <span class="checkmark"></span>
+                                Hébergement 1 an (+1 320 MAD)
+                            </label>
+                        </div>
+                    </div>
+                    <div class="quote-result">
+                        <div class="quote-price">
+                            <span class="price-label">Estimation :</span>
+                            <span class="price-value" id="price-value">0 MAD</span>
+                        </div>
+                        <div class="quote-details" id="quote-details" style="display: none;">
+                            <p class="quote-note">* Prix indicatif, devis gratuit et personnalisé disponible</p>
+                        </div>
+                        <a href="#contact" class="btn btn-primary">Obtenir un devis précis</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+		
+    </section>
+
+    <!-- Packs & Offers -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio py-24 bg-gradient-to-br from-slate-50 to-slate-100">
+        <div class="container mx-auto px-5">
+            <div class="section-header text-center max-w-3xl mx-auto">
+                <h2 class="section-title text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-brand-500 via-navy-500 to-brand-600 bg-clip-text text-transparent">Nos Réalisations</h2>
+                <p class="section-description text-slate-600">
+                    Découvrez quelques-uns de nos projets récents
+                </p>
+            </div>
+            <div class="portfolio-filter flex flex-wrap justify-center gap-3">
+                <button class="filter-btn active rounded-full px-5 py-2 border border-brand-400 text-brand-700 hover:scale-105 transition" data-filter="all">Tous</button>
+                <button class="filter-btn rounded-full px-5 py-2 border border-brand-400 text-brand-700 hover:scale-105 transition" data-filter="web">Sites Web</button>
+                <button class="filter-btn rounded-full px-5 py-2 border border-brand-400 text-brand-700 hover:scale-105 transition" data-filter="ecommerce">E-commerce</button>
+                <button class="filter-btn rounded-full px-5 py-2 border border-brand-400 text-brand-700 hover:scale-105 transition" data-filter="branding">Branding</button>
+            </div>
+            <div class="portfolio-grid grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="portfolio-item rounded-2xl border border-white/60 bg-white/80 backdrop-blur overflow-hidden shadow-neon hover:shadow-xl transition-all" data-category="web">
+                    <div class="portfolio-image relative">
+                        <img data-src="https://images.unsplash.com/photo-1487014679447-9f8336841d58?q=80&w=800&auto=format&fit=crop" alt="Site vitrine moderne" width="400" height="300">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Site Vitrine Moderne</h3>
+                                <p>Design épuré et responsive</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item rounded-2xl border border-white/60 bg-white/80 backdrop-blur overflow-hidden shadow-neon hover:shadow-xl transition-all" data-category="ecommerce">
+                    <div class="portfolio-image relative">
+                        <img data-src="servicesbladi2.png" alt="Boutique en ligne" width="400" height="300">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Boutique en Ligne</h3>
+                                <p>E-commerce complet avec paiement</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item rounded-2xl border border-white/60 bg-white/80 backdrop-blur overflow-hidden shadow-neon hover:shadow-xl transition-all" data-category="branding">
+                    <div class="portfolio-image relative">
+                        <img data-src="https://images.unsplash.com/photo-1529336953121-ad5a0d43d0d2?q=80&w=800&auto=format&fit=crop" alt="Identité visuelle" width="400" height="300">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Identité Visuelle</h3>
+                                <p>Logo et charte graphique complète</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item rounded-2xl border border-white/60 bg-white/80 backdrop-blur overflow-hidden shadow-neon hover:shadow-xl transition-all" data-category="web">
+                    <div class="portfolio-image relative">
+                        <img data-src="pfe4.png" alt="Blog portfolio" width="400" height="300">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Blog Portfolio</h3>
+                                <p>Plateforme de contenu dynamique</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item rounded-2xl border border-white/60 bg-white/80 backdrop-blur overflow-hidden shadow-neon hover:shadow-xl transition-all" data-category="ecommerce">
+                    <div class="portfolio-image relative">
+                        <img data-src="site de voyage.png" alt="Marketplace" width="400" height="300">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Marketplace</h3>
+                                <p>Plateforme multi-vendeurs</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item rounded-2xl border border-white/60 bg-white/80 backdrop-blur overflow-hidden shadow-neon hover:shadow-xl transition-all" data-category="branding">
+                    <div class="portfolio-image relative">
+                        <img data-src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=800&auto=format&fit=crop" alt="Packaging design" width="400" height="300">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h3>Packaging Design</h3>
+                                <p>Design d'emballage créatif</p>
+                                <div class="portfolio-links">
+                                    <a href="#" class="portfolio-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="portfolio-link"><i class="fas fa-eye"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showreel Section -->
+<section class="showreel">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Notre Showreel</h2>
+            <p class="section-description">Aperçu rapide de nos réalisations en vidéo</p>
+        </div>
+        <div class="media-wrapper">
+            <video controls playsinline poster="https://images.unsplash.com/photo-1526481280698-8fcc13fd6ae0?q=80&w=1600&auto=format&fit=crop">
+                <!-- Choisissez une des options ci-dessus -->
+                <source src="https://cdn.coverr.co/videos/coverr-a-designer-sketching-on-a-notebook-3874/1080p.mp4" type="video/mp4">
+                <source src="https://cdn.coverr.co/videos/coverr-html-tag-on-laptop-screen-3618/1080p.mp4" type="video/mp4">
+                <p>Votre navigateur ne supporte pas la lecture vidéo.</p>
+            </video>
+        </div>
+    </div>
+</section>
+
+    <!-- Trust Badges Section -->
+    <section class="trust-badges">
+        <div class="container">
+            <div class="trust-content">
+                <div class="trust-stats">
+                    <div class="trust-stat">
+                        <div class="stat-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>Site Sécurisé SSL</h4>
+                            <p>Protection maximale de vos données</p>
+                        </div>
+                    </div>
+                    <div class="trust-stat">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>+50 Clients Satisfaits</h4>
+                            <p>En 2024, et ça continue !</p>
+                        </div>
+                    </div>
+                    <div class="trust-stat">
+                        <div class="stat-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>2+ Ans d'Expérience</h4>
+                            <p>Expertise reconnue dans le digital</p>
+                        </div>
+                    </div>
+                    <div class="trust-stat">
+                        <div class="stat-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <div class="stat-info">
+                            <h4>Paiement Sécurisé</h4>
+                            <p>CB, PayPal, virement, échelonnement</p>
+                        </div>
+                    </div>
+                </div>
+                
+                       
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ce que disent nos clients</h2>
+                <p class="section-description">
+                    La satisfaction de nos clients est notre priorité
+                </p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "SiDigit a transformé notre présence en ligne. Notre site web est magnifique 
+                            et nous avons vu une augmentation de 300% de nos ventes en ligne."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://via.placeholder.com/60x60/667eea/ffffff?text=MC" alt="Marie Claire">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Marie Claire</h4>
+                                <p class="author-role">Directrice, Boutique Mode</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Service exceptionnel ! L'équipe est très professionnelle et à l'écoute. 
+                            Notre référencement s'est considérablement amélioré."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://via.placeholder.com/60x60/4facfe/ffffff?text=JD" alt="Jean Dubois">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Jean </h4>
+                                <p class="author-role">CEO, TechStart</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">
+                            "Design créatif et développement de qualité. SiDigit a su comprendre 
+                            nos besoins et livrer un projet parfait dans les délais."
+                        </p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://via.placeholder.com/60x60/43e97b/ffffff?text=SL" alt="Sophie Laurent">
+                            </div>
+                            <div class="author-info">
+                                <h4 class="author-name">Sophie Laurent</h4>
+                                <p class="author-role">Fondatrice, CréaDesign</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop" alt="Équipe SiDigit" width="500" height="400">
+                </div>
+                <div class="about-text">
+                    <h2 class="section-title">À propos de SiDigit</h2>
+                    <p class="about-description">
+                        Fondée en 2024, SiDigit est une agence digitale passionnée qui accompagne 
+                        les entreprises dans leur transformation numérique. Notre mission est de 
+                        créer des solutions digitales innovantes qui génèrent des résultats concrets.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4>Équipe experte</h4>
+                                <p>Développeurs, designers et marketeurs expérimentés</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-rocket"></i>
+                            <div>
+                                <h4>Innovation constante</h4>
+                                <p>Nous suivons les dernières tendances technologiques</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-handshake"></i>
+                            <div>
+                                <h4>Partenariat durable</h4>
+                                <p>Un accompagnement personnalisé et à long terme</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Travaillons ensemble</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Conseils & Actualités</h2>
+                <p class="section-description">
+                    Restez informé des dernières tendances du digital
+                </p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://via.placeholder.com/400x250/667eea/ffffff?text=SEO+2024" alt="SEO 2024">
+                        <div class="blog-category">SEO</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">15 Janvier 2024</span>
+                            <span class="blog-read-time">5 min de lecture</span>
+                        </div>
+                        <h3 class="blog-title">Les tendances SEO à suivre en 2024</h3>
+                        <p class="blog-excerpt">
+                            Découvrez les nouvelles stratégies de référencement qui vont 
+                            dominer cette année et comment les implémenter.
+                        </p>
+                        <a href="#" class="blog-link">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://via.placeholder.com/400x250/4facfe/ffffff?text=Web+Design" alt="Web Design">
+                        <div class="blog-category">Design</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">10 Janvier 2024</span>
+                            <span class="blog-read-time">7 min de lecture</span>
+                        </div>
+                        <h3 class="blog-title">Pourquoi un site web est essentiel en 2024</h3>
+                        <p class="blog-excerpt">
+                            Dans un monde de plus en plus digitalisé, avoir un site web 
+                            professionnel n'est plus une option mais une nécessité.
+                        </p>
+                        <a href="#" class="blog-link">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://via.placeholder.com/400x250/43e97b/ffffff?text=Marketing" alt="Marketing Digital">
+                        <div class="blog-category">Marketing</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">5 Janvier 2024</span>
+                            <span class="blog-read-time">6 min de lecture</span>
+                        </div>
+                        <h3 class="blog-title">Comment réussir sa communication digitale</h3>
+                        <p class="blog-excerpt">
+                            Les clés pour développer une stratégie de communication digitale 
+                            efficace et engager votre audience.
+                        </p>
+                        <a href="#" class="blog-link">Lire la suite <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            <div class="newsletter-section">
+                <div class="newsletter-container">
+                    <div class="newsletter-content">
+                        <h3>Restez informé des dernières tendances</h3>
+                        <p>Recevez nos conseils SEO, design et marketing directement dans votre boîte mail</p>
+                        <form class="newsletter-form" id="newsletter-form">
+                            <div class="newsletter-input-group">
+                                <input type="email" id="newsletter-email" placeholder="Votre adresse email" required>
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="fas fa-paper-plane"></i>
+                                    S'abonner
+                                </button>
+                            </div>
+                            <div class="newsletter-privacy">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="newsletter-privacy" required>
+                                    <span class="checkmark"></span>
+                                    J'accepte de recevoir des emails de SiDigit (désabonnement possible à tout moment)
+                                </label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Questions Fréquentes</h2>
+                <p class="section-description">
+                    Trouvez les réponses à vos questions les plus courantes
+                </p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Combien coûte la création d'un site web ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Le coût varie selon la complexité de votre projet. Un site vitrine simple démarre à 3 290 MAD, 
+                        tandis qu'un e-commerce complet peut coûter entre 9 890 MAD et 32 990 MAD. Utilisez notre calculateur 
+                        de devis pour une estimation instantanée ou contactez-nous pour un devis personnalisé.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Combien de temps faut-il pour créer un site ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Un site vitrine simple prend généralement 2-3 semaines, un site e-commerce 4-6 semaines. 
+                        Les délais dépendent de la complexité et de la réactivité du client pour fournir le contenu. 
+                        Nous respectons toujours les délais convenus.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Proposez-vous le paiement en plusieurs fois ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous proposons plusieurs options de paiement : 50% à la commande et 50% à la livraison, 
+                        ou échelonnement sur 3-6 mois sans frais. Nous acceptons CB, PayPal, virement bancaire 
+                        et prélèvement automatique.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Proposez-vous la maintenance après livraison ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous proposons des contrats de maintenance incluant mises à jour, sauvegardes, 
+                        monitoring et support technique. Tarifs à partir de 540 MAD/mois. La maintenance est 
+                        essentielle pour la sécurité et les performances de votre site.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Mes données sont-elles sécurisées ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolument. Nous utilisons des protocoles de sécurité avancés, certificats SSL, 
+                        sauvegardes régulières et hébergement sécurisé pour protéger vos données. 
+                        Conformité RGPD garantie.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Puis-je modifier mon site moi-même ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous développons des interfaces d'administration intuitives ou intégrons 
+                        des CMS comme WordPress pour vous permettre de gérer votre contenu facilement. 
+                        Formation incluse dans nos packs.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Mon site sera-t-il visible sur Google ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, tous nos sites sont optimisés SEO dès la création. Nous incluons l'optimisation 
+                        technique, les balises meta, le sitemap XML et la soumission aux moteurs de recherche. 
+                        Pour un référencement avancé, nous proposons des services SEO dédiés.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Que se passe-t-il si je ne suis pas satisfait ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Votre satisfaction est notre priorité. Nous proposons 3 révisions gratuites incluses 
+                        dans tous nos packs. Si vous n'êtes toujours pas satisfait, nous remboursons 100% 
+                        de votre investissement dans les 30 jours.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Proposez-vous l'hébergement ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous proposons un hébergement haute performance avec CDN, certificats SSL, 
+                        sauvegardes automatiques et support 24/7. Tarifs à partir de 110 MAD/mois. 
+                        Migration gratuite depuis votre hébergeur actuel.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Mon site sera-t-il compatible mobile ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolument ! Tous nos sites sont 100% responsive et optimisés pour tous les appareils 
+                        (mobile, tablette, desktop). Nous utilisons une approche "mobile-first" pour garantir 
+                        une expérience utilisateur parfaite sur tous les écrans.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Puis-je ajouter des fonctionnalités plus tard ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Bien sûr ! Nous concevons tous nos sites de manière évolutive. Vous pouvez ajouter 
+                        des fonctionnalités comme un blog, un système de réservation, un chat en direct, 
+                        ou même transformer votre site vitrine en e-commerce. Tarifs préférentiels pour nos clients.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Comment puis-je vous contacter ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Plusieurs moyens de nous joindre : téléphone (+212 6 12 34 56 78), email (contact@sidigit.ma), 
+                        WhatsApp pour un contact rapide, ou via notre formulaire de contact. 
+                        Réponse garantie sous 24h ouvrées.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contactez-nous</h2>
+                <p class="section-description">
+                    Prêt à démarrer votre projet ? Parlons-en !
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Téléphone</h4>
+                            <p>+212 6 25 12 92 08</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>contact@sidigit.ma</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <p>+212 6 25 12 92 08</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Adresse</h4>
+                            <p>123 Avenue Mohammed V<br>20000 Casablanca, Maroc</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" class="form-input" placeholder="Votre nom" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" class="form-input" placeholder="Votre email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" class="form-input" placeholder="Votre téléphone">
+                    </div>
+                    <div class="form-group">
+                        <select id="service" name="service" class="form-select" required>
+                            <option value="">Service souhaité</option>
+                            <option value="site-vitrine">Site vitrine</option>
+                            <option value="ecommerce">E-commerce</option>
+                            <option value="marketing">Marketing digital</option>
+                            <option value="branding">Identité visuelle</option>
+                            <option value="maintenance">Maintenance</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" class="form-textarea" placeholder="Décrivez votre projet..." rows="5" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <span class="checkmark"></span>
+                            J'accepte la <a href="#" class="privacy-link">politique de confidentialité</a>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i>
+                        Envoyer le message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-text">Si<span class="logo-accent">Digit</span></span>
+                    </div>
+                    <p class="footer-description">
+                        Votre partenaire digital pour la création de sites web, 
+                        le marketing digital et l'identité visuelle.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Création de sites web</a></li>
+                        <li><a href="#services">Marketing digital</a></li>
+                        <li><a href="#services">Identité visuelle</a></li>
+                        <li><a href="#services">Maintenance</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Entreprise</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contact</h4>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> +212 6 12 34 56 78</p>
+                        <p><i class="fas fa-envelope"></i> contact@sidigit.ma</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Casablanca, Maroc</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SiDigit. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Mentions légales</a>
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">CGV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Chat Button -->
+    <div class="whatsapp-chat">
+        <a href="https://wa.me/21225129208" target="_blank" class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-text">Chat WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
